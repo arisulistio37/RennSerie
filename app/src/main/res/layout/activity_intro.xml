@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Intro"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/top"
+        tools:ignore="ContentDescription" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="@string/intr"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/intro1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="3sp"
+        android:layout_marginRight="3sp"
+        android:text="@string/intro1"
+        android:layout_below="@id/intro"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/intro1"
+        android:background="@color/black"/>
+
+    <ImageView
+        android:id="@+id/fialog"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@id/separator"
+        android:src="@drawable/fia"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/fia"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/fia"
+        android:layout_below="@id/separator"
+        android:layout_toEndOf="@id/fialog"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"/>
+
+            <View
+                android:id="@+id/separator1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/fia"
+                android:background="@color/black"/>
+
+            <ImageView
+                android:id="@+id/fimlog"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="5dp"
+                android:layout_below="@id/separator1"
+                android:src="@drawable/fim"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/fim"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/fim"
+                android:layout_below="@id/separator1"
+                android:layout_toEndOf="@id/fimlog"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"/>
+
+            <View
+                android:id="@+id/separator2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/fim"
+                android:background="@color/black"/>
+
+            <ImageView
+                android:id="@+id/failog"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/separator2"
+                android:src="@drawable/fai"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/fai"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/fai"
+                android:layout_below="@id/separator2"
+                android:layout_toEndOf="@id/failog"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>
