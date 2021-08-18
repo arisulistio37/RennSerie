@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,30 +12,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:src="@drawable/top" />
+        android:src="@drawable/top"
+        tools:ignore="ContentDescription"/>
 
     <TextView
         android:id="@+id/intr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
-        android:layout_below="@id/logo"
         android:layout_marginTop="10dp"
         android:text="@string/intro"
-        android:textSize="15dp"
-        android:textColor="@color/black"/>
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        tools:ignore="RtlHardcoded" />
 
     <Button
         android:id="@+id/intro"
         android:text="@string/intr"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_centerInParent="true"
+        android:layout_width="240dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
         android:onClick="Intro"
-        android:layout_below="@id/intr"
         android:layout_marginTop="3dp"
-
-        android:backgroundTint="@color/black"/>
+        android:background="@drawable/button"
+        tools:ignore="UsingOnClickInXml" />
 
     <TextView
         android:id="@+id/category"
@@ -44,47 +43,51 @@
         android:layout_height="wrap_content"
         android:text="@string/Category"
         android:layout_marginLeft="5dp"
-        android:layout_below="@id/intro"
         android:layout_marginTop="5dp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        tools:ignore="RtlHardcoded" />
 
     <Button
         android:id="@+id/owr"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_centerInParent="true"
-        android:layout_below="@id/category"
+        android:layout_width="240dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
         android:layout_marginTop="2dp"
         android:onClick="Ow"
         android:text="@string/Categories1"
-        android:backgroundTint="@color/black"/>
+        android:background="@drawable/button"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/ewr"
         android:text="@string/Categories2"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_centerInParent="true"
-        android:layout_below="@id/owr"
+        android:layout_width="240dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
         android:onClick="Er"
-        android:backgroundTint="@color/black"/>
+        android:background="@drawable/button"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/mr"
         android:text="@string/Categories3"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_centerInParent="true"
-        android:layout_below="@id/ewr"
+        android:layout_width="240dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
         android:onClick="Mc"
-        android:backgroundTint="@color/black"/>
+        android:background="@drawable/button"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:text="@string/Categories4"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_centerInParent="true"
-        android:layout_below="@id/mr"
+        android:layout_width="240dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
         android:onClick="air"
-        android:backgroundTint="@color/black"/>
-</RelativeLayout>
+        android:background="@drawable/button"
+        tools:ignore="UsingOnClickInXml" />
+
+</LinearLayout>
